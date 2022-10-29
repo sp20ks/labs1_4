@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спасскова Ксения Алексеевна, вариант 16, ИУ6-35Б </title>
+</head>
+<body>
+    <div>
+        <h4>
+            Текст задания:
+        </h4>
+        <p>
+            Дан массив чисел. Определить минимум и максимум массива, поменять их местами в массиве, вывести результат и произведение этих элеметнов.
+        </p>
+    </div>
+    <div>
+        <h4>
+            Ввод массива:
+        </h4>
+        <form>
+            <div class="form-group" style="margin-bottom: 5px;">
+                <div>
+                    <input type="text" class="form-control" id="input">
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-outline-primary" onclick="add_elem();">Push to add element</button>
+                <button type="button" class="btn btn-outline-primary" onclick="output();">Result</button>
+            </div>
+        </form>
+    </div>
+    <div id="div-array">
+        <p>Array before</p>
+    </div>
+    <div id="div-modif">
+    </div>
+
+    <script>
+        var massiv = [];
+        function add_elem() { 
+            var inp = document.getElementById("input").value;
+            var area = document.getElementById("div-array");
+            area.innerHTML = '';
+            var array_from_input = inp.split(' ');
+            var reg = /^\d+$/;
+            if (array_from_input.length <= 1) {
+                alert("Input more than 1 element")
+            } else {
+                for (value of array_from_input) {
+                    console.log(value);
+                    if (value.match(reg)) {
+                        massiv.push(Number(value));
+                        var p = document.createElement("p");
+                        area.appendChild(p);
+                        p.textContent = value;
+                    } else {
+                        alert("We need number not string");
+                    }
+                }
+            }  
+            document.getElementById("input").value = "";
+        }
+
+        function output() {
+            var area = document.getElementById("div-modif");
+            area.innerHTML = '';
+            var i = 0;
+            pair_of_max = Max();
+            pair_of_min = Min();
+            if (pair_of_max[0] == pair_of_min[0]) {
+                alert("Max = Min. Sorry, enter array again :(")
+            } else {
+                var p = document.createElement("p");
+                area.appendChild(p);
+                p.textContent = "Array after";
+                for (elem of massiv) {
+                    if (i == pair_of_min[1]) {
+                        var p = document.createElement("p");
+                        area.appendChild(p);
+                        p.textContent = pair_of_max[0];
+                        console.log("A");
+                    } else if (i == pair_of_max[1])  {
+                        var p = document.createElement("p");
+                        area.appendChild(p);
+                        p.textContent = pair_of_min[0];
+                        console.log("B");
+                    } else {
+                        var p = document.createElement("p");
+                        area.appendChild(p);
+                        p.textContent = elem; 
+                    }
+                    i++;
+                }
+                var result = pair_of_max[0] * pair_of_min[0];
+                p = document.createElement("p");
+                area.appendChild(p);
+                p.textContent ="Max * Min = " + result;
+            }
+            massiv.length = 0;
+        }
+
+        function Max() {
+            var max = massiv[0];
+            var i = 0;
+            var index_of_max = 0;
+            for (elem of massiv) {
+                if (max < elem) {
+                    max = elem;
+                    index_of_max = i;
+                }
+                ++i;
+            }
+            var pair = [max, index_of_max];
+            return pair;
+        }
+
+        function Min() {
+            var min = massiv[0];
+            var i = 0;
+            var index_of_min = 0;
+            for (elem of massiv) {
+                if (min > elem) {
+                    min = elem;
+                    index_of_min = i;
+                }
+                ++i;
+            }
+            var pair = [min, index_of_min];
+            return pair;
+        }
+    </script>
+
+</body>
+</html>

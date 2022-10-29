@@ -1,0 +1,40 @@
+timetable {
+    display: table;
+    border-collapse:collapse;
+}
+.head_table {
+    display: table-row-group;
+}
+
+.str {
+    display: table-row-group;
+    border: 1px solid #ccc;
+}
+
+.bl {
+    display: table-cell;
+    border: 1px solid #ccc;
+    text-align:center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.no_border {
+    display: table-cell;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+.bl_ {
+    display: table-cell;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 40px;
+}

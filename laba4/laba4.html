@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="windows-1251" />
+    <title>
+        ����, �����, ������� ��� :)
+    </title>
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <header class="up_and_down">
+        <h3>
+            ������� "����, ����� � ������� ��� :)"
+        </h3>
+    </header>
+    <main>
+        <div class="my_container">
+            <div class="inline_elem div_form">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="edtURLpage" class="control-label">
+                            ������������ ������
+                        </label>
+                        <div>
+                            <input type="text" class="form-control" id="name_of_product">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="edtURLpage" class="control-label">
+                            �������� ������
+                        </label>
+                        <div>
+                            <input type="number" class="form-control" id="price">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-outline-primary" onclick="add_to_table();">�������� � �������</button>
+                    </div>
+                </form>
+            </div>
+            <div class="inline_elem" style="width: 70%;">
+                <div style="flex-direction: column;">
+                    <table class="my_table table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    �������
+                                </th>
+                                <th scope="col">
+                                    ������������
+                                </th>
+                                <th scope="col">
+                                    ���������
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="table_of_products">
+                            <tr onclick="add_line_to_basket(this.children);">
+                                <th scope="row">
+                                    1
+                                </th>
+                                <td>
+                                    �������� �������
+                                </td>
+                                <td>
+                                    213213
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="my_container" style="flex-direction: column; margin-top: 20px;">
+            <h4>
+                �������
+            </h4>
+            <table class="my_table table">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            �������
+                        </th>
+                        <th scope="col">
+                            ������������
+                        </th>
+                        <th scope="col">
+                            ���������
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="body_basket">
+                </tbody>
+            </table>
+        </div>
+        <div class="my_container">
+            <form class="my_container" style="margin:auto; width: 90%;">
+                <button type="button" class="btn btn-outline-primary my_btn" onclick="count_price();">���������</button>
+                <input type="text" class="form-control input_readonly" id="result_price" readonly />
+            </form>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="container">
+            <p class="footer-text">Footer</p>
+        </div>
+    </footer>
+</body>
+</html>

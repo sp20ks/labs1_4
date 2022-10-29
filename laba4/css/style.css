@@ -1,0 +1,59 @@
+body {
+    margin-bottom: 40px;
+}
+
+main {
+    margin-top: 15px;
+}
+
+p, h3, h4{
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer {
+    height: 40px;
+    bottom: 0;
+    width: 100%;
+}
+
+.up_and_down {
+    background-color: #0C5DA5;
+    color: white;
+    padding:20px;
+}
+
+form {
+    border: 3px solid #0C5DA5;
+    padding: 20px;
+    margin-right: 20px;
+    text-align:center;
+}
+
+.my_container {
+    display: flex;
+    margin: 15px;
+}
+
+.inline_elem {
+    display: block-inline;
+}
+
+.div_form {
+    width: 30%;
+}
+
+.my_table {
+    text-align: center;
+}
+
+.my_btn {
+    margin-right: 10px;
+
+}
+
+footer {
+    width: 100%;
+    color: white;
+    padding: 1%;
+    background-color: #0C5DA5;
+}

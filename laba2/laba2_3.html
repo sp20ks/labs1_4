@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="windows-1251">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICS6 Bootstrap</title>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/html" href="http://e-learning.bmstu.ru/moodle/pluginfile.php/7546/mod_folder/content/0/bootstrap.min.css">    <style>
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        body {
+            margin-bottom: 40px;
+        }
+
+        main {
+            margin-top: 15px;
+        }
+
+        footer {
+            height: 40px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .my-primary {
+            background-color: #21825B;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark my-primary">
+            <a class="navbar-brand" href="avatar.jpg">Navbar</a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-4">
+                <img src="avatar.jpg"
+                     alt="avatar" width="150" height="150">
+            </div>
+            <div class="col-8">
+                <p>Любой текст</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <form>
+                    <table border="1">
+                        <tr>
+                            <th colspan="2">
+                                Форма регистрации
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                Имя
+                            </td>
+                            <td align="center">
+                                <input type="text" class="form-control" placeholder="First name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Фамилия
+                            </td>
+                            <td align="center">
+                                <input type="text" class="form-control" placeholder="Last name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Почта
+                            </td>
+                            <td align="center">
+                                <input type="email" class="form-control"
+                                       id="exampleInputEmail1" placeholder="Enter email" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="2">
+                                <button class="btn btn-primary">Отправить</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="col-8">
+                <table border="1" width="50%">
+                    <thead>
+                        <tr>
+                            <th>
+                                Время
+                            </th>
+                            <th>
+                                ЧС
+                            </th>
+                            <th>
+                                ЗН
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td align="center">
+                                08:30 - 10:05
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                10:15 - 11:50
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                12:00 - 13:35
+                            </td>
+                            <td colspan="2" align="center">(лек) Языки интернет-программирования 501ю Самарев Р. С. </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                13:50 - 15:25
+                            </td>
+                            <td colspan="2" align="center">(лек) Базы данных 501ю Фомин М. М. </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                15:40 - 17:15
+                            </td>
+                            <td align="center">(сем) Физика 323</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                17:25 - 19:00
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                19:10 - 20:45
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="main_text">
+                    <span class="dedicated">Циолковского формула</span>, основное уравнение движения ракеты; впервые опубликовано К. Э. Циолковским в 1903 в работе «Исследование мировых пространств реактивными приборами». По Ц. ф. определяется максимальная скорость, которую может получить
+                    <span class="colored">одноступенчатая</span> ракета в идеальном случае, когда её полёт происходит не только вне пределов атмосферы, но и вне пределов поля тяготения Земли. Циолковский считает начальную скорость ракеты равной <span class="dedicated">нулю</span>. Ц. ф. часто записывается в виде:
+                </p>
+                <p class="formula">
+                    <var>V</var><sub>max </sub><var>= </var><var>u </var><var>× </var><var>ln(</var><var>M</var><sub>0 </sub><var>/ </var><var>M</var><sub>k </sub><var>)</var>
+                </p>
+                <p class="main_text">
+                    К этой формуле К.Э. Циолковский пришел в <span class="colored">1896</span> г., но заявить в печати о ней удалось лишь в 1903 г. Почти одновременно формулу вывел и приват-доцент Петербургского политехнического института <span class="dedicated">И.В. Мещерский</span>, обнародовал ее в 1897 г. в работе "Динамика точки переменной массы".
+                    Но если первый связывал с нею решение практической задачи, то второй рассматривал сугубо <span class="colored">теоретический аспект</span>.
+                </p>
+                <p class="main_text">
+                    Однако, как говорится, яблоки созревают в разных садах одновременно, когда приходит тому пора, — таков уж закон.
+                    Впрочем, уравнение, подобное формуле Циолковского, выводили и раньше. Об этом написал в книге о Германе Оберте академик<span class="dedicated"> Б.В. Раушенбах</span> (Земля и Вселенная, 1995, № 5), заметив, что сегодня эту формулу выведет <span class="dedicated">любой</span> студент
+                    технического вуза, — чего там журналисты подняли шум? И здесь ирония в подтексте. Сегодня и знаменитую формулу Галилея (уравнение качания маятника) старшеклассник выведет, да только в этом ли дело?
+                    Глубокочтимый нами Б.В. Раушенбах (Земля и Вселенная, 2001, № 4) справедливо отмечает в своей книге: заслуга Циолковского не в формуле,
+                    а в том, что он <span class="dedicated">первый</span> увидел в ней возможность выхода человека в мировое пространство.
+                    Согласимся. Но при этом все же заметим, что сия справедливость неточна: Константин Эдуардович<span class="dedicated"> не</span> от формулы шел в Космос,
+                    а наоборот — <span class="colored">в поиске технических средств</span> решения поставленной им практической задачи (космического полета).
+                </p>
+                <p class="main_text">
+                    <span class="dedicated">В этом суть принципиальной разницы заслуг провинциального учителя К.Э. Циолковского и столичного доцента И.В. Мещерского.</span>
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer class="my-primary">
+        <div class="container">
+            <p class="footer-text">Footer</p>
+        </div>
+    </footer>
+</body>
+</html>
